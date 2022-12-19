@@ -1,0 +1,14 @@
+{
+  "name": "vite-styles-build",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "vite3": "node_modules/vite3/bin/vite.js build -c vite3.config.js --outDir ../dist/vite3",
+    "vite4": "node_modules/vite4/bin/vite.js build -c vite4.config.js --outDir ../dist/vite4",
+    "build": "npm run vite3 && npm run vite4"
+  },
+  "dependencies": {
+   "vite3": "npm:vite@^3",
+   "vite4": "npm:vite@^4"
+  }
+}
